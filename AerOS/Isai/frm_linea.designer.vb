@@ -25,22 +25,24 @@ Partial Class frm_linea
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
+        Me.btn_add = New System.Windows.Forms.Button()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.btn_add)
         Me.GroupBox1.Controls.Add(Me.TextBox1)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Location = New System.Drawing.Point(23, 12)
+        Me.GroupBox1.Location = New System.Drawing.Point(12, 12)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(386, 139)
+        Me.GroupBox1.Size = New System.Drawing.Size(344, 58)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(151, 56)
+        Me.TextBox1.Location = New System.Drawing.Point(95, 23)
         Me.TextBox1.Name = "TextBox1"
         Me.TextBox1.Size = New System.Drawing.Size(140, 20)
         Me.TextBox1.TabIndex = 5
@@ -50,17 +52,26 @@ Partial Class frm_linea
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Georgia", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.ForeColor = System.Drawing.SystemColors.HotTrack
-        Me.Label2.Location = New System.Drawing.Point(62, 58)
+        Me.Label2.Location = New System.Drawing.Point(6, 25)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(83, 18)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "NOMBRE"
         '
+        'btn_add
+        '
+        Me.btn_add.Location = New System.Drawing.Point(257, 12)
+        Me.btn_add.Name = "btn_add"
+        Me.btn_add.Size = New System.Drawing.Size(75, 41)
+        Me.btn_add.TabIndex = 6
+        Me.btn_add.Text = "Agregar"
+        Me.btn_add.UseVisualStyleBackColor = True
+        '
         'frm_linea
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(434, 181)
+        Me.ClientSize = New System.Drawing.Size(363, 79)
         Me.Controls.Add(Me.GroupBox1)
         Me.Name = "frm_linea"
         Me.Text = "LINEA"
@@ -72,4 +83,5 @@ Partial Class frm_linea
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
     Friend WithEvents TextBox1 As System.Windows.Forms.TextBox
     Friend WithEvents Label2 As System.Windows.Forms.Label
+    Friend WithEvents btn_add As System.Windows.Forms.Button
 End Class
