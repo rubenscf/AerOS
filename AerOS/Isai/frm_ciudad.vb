@@ -24,7 +24,7 @@ Public Class frm_ciudad
             txt_ciudad.Text = ""
             MsgBox("Datos insertados correctamente")
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox(ex.Message, MsgBoxStyle.Critical)
         Finally
             frm_main._cnn.Close()
 
